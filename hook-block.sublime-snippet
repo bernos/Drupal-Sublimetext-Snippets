@@ -1,0 +1,64 @@
+<snippet>
+  <content><![CDATA[
+/**
+ * Implementation of hook_block().
+ * 
+ * @link http://api.drupal.org/api/drupal/developer--hooks--core.php/function/hook_block/6
+ * @param string|integer \$delta
+ * @param array \$edit
+ * @return mixed
+ */
+function ${1:modulename}_block(\$op = 'list', \$delta = 0, \$edit = array()){
+  switch (\$op) {
+    case 'list' :
+      \$blocks = array();
+
+      \$blocks[${2:0}] = array(
+        'info' => t('${3:TODO: Describe this block in $TM_FILENAME}'),
+        'weight' => ${4:0},
+        'cache' => ${5:BLOCK_CACHE_PER_ROLE}
+      );
+
+      return \$blocks;
+    break;
+
+    case 'view' :
+      \$block = array();
+
+      if (\$delta == $2) {
+        \$block['subject'] = t('${6:TODO: Define block title in $TM_FILENAME}');
+        \$block['content'] = ${7:"TODO: Define block content in $TM_FILENAME"}
+      }
+    break;
+$0
+    case 'configure' :
+      \$form = array();
+
+      if (\$delta == $2) {
+        /*
+        \$form['items'] = array(
+          '#type' => 'select', 
+          '#title' => t('Number of items'), 
+          '#default_value' => variable_get('$1_block_items', 0), 
+          '#options' => array('1', '2', '3'),
+        );
+        //*/
+      }
+
+      return \$form;
+    break;
+
+    case 'save' :
+      if (\$delta == $2) {
+        /*
+        variable_set('$1_block_items', $edit['items']);
+        //*/
+      }
+    break;    
+  } 
+}
+  ]]></content>
+  <tabTrigger>hook_block</tabTrigger>
+  <scope>source.php</scope>
+  <description>Declare a block or set of blocks.</description>
+</snippet>
