@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+/**
+ * Implementation of hook_install().
+ *
+ * Install the current version of the database schema, and any other setup tasks
+ * 
+ * @category hooks
+ * @link http://api.drupal.org/api/drupal/developer--hooks--install.php/function/hook_install/6
+ */
+function ${1:modulename}_install() {
+  $0
+}
+  ]]></content>
+  <tabTrigger>hook_install</tabTrigger>
+  <scope>source.php</scope>
+  <description>Install the current version of the database schema, and any other setup tasks.</description>
+</snippet>
