@@ -1,3 +1,7 @@
 hooks implemented so far
 
 hook_access
+hook_block
+
+TODOS
+docs for hook_block return type

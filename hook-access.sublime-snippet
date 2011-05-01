@@ -3,6 +3,7 @@
 /**
  * Implementation of hook_access().
  *
+ * @category hooks
  * @link http://api.drupal.org/api/drupal/developer--hooks--node.php/function/hook_access/6
  * @param string \$op 
  * @param object \$node 

@@ -2,7 +2,10 @@
   <content><![CDATA[
 /**
  * Implementation of hook_cron().
+ *
+ * Perform periodic actions.
  * 
+ * @category hooks
  * @link http://api.drupal.org/api/drupal/developer--hooks--core.php/function/hook_cron/6
  */
 function ${1:modulename}_cron() {

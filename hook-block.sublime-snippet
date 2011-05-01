@@ -3,6 +3,7 @@
 /**
  * Implementation of hook_block().
  * 
+ * @category hooks
  * @link http://api.drupal.org/api/drupal/developer--hooks--core.php/function/hook_block/6
  * @param string|integer \$delta
  * @param array \$edit
